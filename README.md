@@ -13,7 +13,7 @@
 <strong>T</strong>urbo <strong>S</strong>peed<sup>[1]</sup><br />
 Version</p>
 
-A fork and drop-in replacement of npm's official [semver](https://www.npmjs.com/package/semver) library, it has all 26 functions of the original library (except `satisfies`)<sup>[2]</sup>, with the same implementation and the same API<sup>[3]</sup>, but:
+A fork and drop-in replacement of npm's official [semver](https://www.npmjs.com/package/semver) library, it has all 26 functions of the original library (except `satisfies`)<sup>[2]</sup>, with the same implementation and the same API, passes all the original's tests<sup>[3]</sup>, but:
 
 - It is more lightweight and perfectly treeshakable with ES modules<sup>[4]</sup>
   - It removed SemVer class and uses a purely functional approach<sup>[5]</sup>
@@ -41,7 +41,7 @@ Or directly in HTML (not tree-shakable, obviously):
 <script>semver.compare("1.0.0", "1.0.3")</script>
 ```
 
-[Documentation: https://semver.tomchen.org/](https://semver.tomchen.org/)
+Documentation: [https://semver.tomchen.org/](https://semver.tomchen.org/)
 
 ## Size comparison
 
