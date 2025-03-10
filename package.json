@@ -36,6 +36,7 @@
     "lint": "eslint src test --fix",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
+    "version": "bun scripts/bump.ts",
     "docs": "typedoc"
   },
   "browserslist": [
