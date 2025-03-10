@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://semver.tomchen.org/" target="_blank">
-    <img width="120" src="semver-ts.svg" />
+    <img width="120" src="https://raw.githubusercontent.com/tomchen/semver-ts/main/semver-ts.svg" />
   </a>
 </p>
 
