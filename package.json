@@ -15,13 +15,12 @@
   "type": "module",
   "exports": {
     "types": "./dist/index.d.ts",
-    "browser": "./dist/index.global.js",
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
-  "browser": "dist/index.global.js",
+  "browsers": "dist/index.global.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
