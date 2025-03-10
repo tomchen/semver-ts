@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://tomchen.github.io/semver-ts/" target="_blank">
+  <a href="https://semver.tomchen.org/" target="_blank">
     <img width="120" src="semver-ts.svg" />
   </a>
 </p>
@@ -41,7 +41,7 @@ Or directly in HTML (not tree-shakable, obviously):
 <script>semver.compare("1.0.0", "1.0.3")</script>
 ```
 
-[Documentation: https://tomchen.github.io/semver-ts/](https://tomchen.github.io/semver-ts/)
+[Documentation: https://semver.tomchen.org/](https://semver.tomchen.org/)
 
 ## Size comparison
 
