@@ -1,0 +1,41 @@
+import { defineConfig } from 'tsup'
+
+export default defineConfig([
+  {
+    entry: ['src/index.ts'],
+    format: 'esm',
+    target: 'es2015',
+    dts: true,
+    clean: true,
+    minify: false,
+    treeshake: true,
+    sourcemap: true,
+    splitting: false,
+    outDir: 'dist',
+  },
+  {
+    entry: ['src/index.ts'],
+    format: 'cjs',
+    target: 'es2015',
+    dts: false,
+    clean: true,
+    minify: false,
+    treeshake: true,
+    sourcemap: true,
+    splitting: false,
+    outDir: 'dist',
+  },
+  {
+    entry: ['src/index.ts'],
+    format: 'iife',
+    globalName: 'semver',
+    target: 'es2015',
+    dts: true,
+    clean: true,
+    minify: 'terser',
+    treeshake: true,
+    sourcemap: false,
+    splitting: false,
+    outDir: 'dist',
+  },
+])

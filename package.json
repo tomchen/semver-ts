@@ -1,0 +1,60 @@
+{
+  "name": "semver-ts",
+  "version": "1.0.0-beta.0",
+  "description": "",
+  "keywords": [
+    "semver",
+    "lite",
+    "treeshakable",
+    "version",
+    "compare"
+  ],
+  "license": "ISC",
+  "author": "Tom Chen <tomchen.org@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "browser": "./dist/index.global.js",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "browser": "dist/index.global.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "checkall": "bun run lint && bun run typecheck && bun run format && bun test",
+    "format": "prettier --write src test",
+    "lint": "eslint src test --fix",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "docs": "typedoc"
+  },
+  "browserslist": [
+    ">0%"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/bun": "^1.2.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-compat": "^6.0.2",
+    "prettier": "^3.5.3",
+    "terser": "^5.39.0",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  },
+  "packageManager": "bun@1.2.4",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
