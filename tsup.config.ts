@@ -17,7 +17,7 @@ export default defineConfig([
     entry: ['src/index.ts'],
     format: 'cjs',
     target: 'es2015',
-    dts: false,
+    dts: true,
     clean: true,
     minify: false,
     treeshake: true,

@@ -1,7 +1,7 @@
 {
   "name": "semver-ts",
   "version": "1.0.1",
-  "description": "",
+  "description": "Tree-shakable, lightweight, drop-in replacement of semver with correct type definition",
   "keywords": [
     "semver",
     "lite",
@@ -14,29 +14,33 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
   },
   "main": "dist/index.cjs",
+  "unpkg": "dist/index.global.js",
   "module": "dist/index.js",
-  "browsers": "dist/index.global.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "tsup",
     "checkall": "bun run lint && bun run typecheck && bun run format && bun test",
+    "docs": "typedoc",
     "format": "prettier --write src test",
     "lint": "eslint src test --fix",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
-    "version": "bun scripts/bump.ts",
-    "docs": "typedoc"
+    "version": "bun scripts/bump.ts"
   },
   "browserslist": [
     ">0%"
@@ -56,5 +60,8 @@
   "packageManager": "bun@1.2.4",
   "engines": {
     "node": ">=0.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

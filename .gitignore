@@ -1,4 +1,5 @@
 docs/
+*.tgz
 
 # Node modules
 node_modules/
