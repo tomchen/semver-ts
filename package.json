@@ -9,6 +9,14 @@
     "version",
     "compare"
   ],
+  "homepage": "https://semver.tomchen.org/",
+  "bugs": {
+    "url": "https://github.com/tomchen/semver-ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomchen/semver-ts.git"
+  },
   "license": "ISC",
   "author": "Tom Chen <tomchen.org@gmail.com>",
   "sideEffects": false,

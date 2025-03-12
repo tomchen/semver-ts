@@ -1,6 +1,5 @@
 /**
  * Functions in the original semver (node) but not included in this package:
- * inc
  * satisfies
  **/
 
