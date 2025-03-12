@@ -1,6 +1,6 @@
 {
   "name": "semver-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tree-shakable, lightweight, drop-in replacement of semver with correct type definition",
   "keywords": [
     "semver",
